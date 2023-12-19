@@ -1,8 +1,10 @@
-package com.thehecklers.planefinder;
+package com.thehecklers.planefinder.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.thehecklers.planefinder.repository.PlaneRepository;
+import com.thehecklers.planefinder.domain.Aircraft;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 

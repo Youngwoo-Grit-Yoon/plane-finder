@@ -1,5 +1,7 @@
-package com.thehecklers.planefinder;
+package com.thehecklers.planefinder.controller;
 
+import com.thehecklers.planefinder.service.PlaneFinderService;
+import com.thehecklers.planefinder.domain.Aircraft;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

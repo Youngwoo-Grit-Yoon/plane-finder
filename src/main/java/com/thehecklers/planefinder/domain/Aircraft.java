@@ -1,4 +1,4 @@
-package com.thehecklers.planefinder;
+package com.thehecklers.planefinder.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

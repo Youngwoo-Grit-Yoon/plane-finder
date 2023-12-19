@@ -1,5 +1,6 @@
-package com.thehecklers.planefinder;
+package com.thehecklers.planefinder.service;
 
+import com.thehecklers.planefinder.domain.Aircraft;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
