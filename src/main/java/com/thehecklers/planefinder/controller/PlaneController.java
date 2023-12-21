@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 @Controller
 public class PlaneController {
@@ -20,5 +23,18 @@ public class PlaneController {
     @GetMapping("/aircraft")
     public Iterable<Aircraft> getCurrentAircraft() throws IOException {
         return pfService.getAircraft();
+    }
+
+    @ResponseBody
+    @GetMapping("/aircraft/list")
+    public List<Aircraft> getAircraftList() throws IOException {
+        Iterator<Aircraft> iterator = pfService.getAircraft().iterator();
+        List<Aircraft> list = new ArrayList<>();
+
+        while (iterator.hasNext()) {
+            list.add(iterator.next());
+        }
+
+        return list;
     }
 }
